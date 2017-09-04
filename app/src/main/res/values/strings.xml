@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">android-fonts-xml-sample</string>
+    <string name="app_name">Android Fonts Xml Sample</string>
+
+
+    <string name="normal_text">Hello World! Normal fonts are awesome!</string>
+    <string name="italic_text">Hello World! Italic fonts are awesome!</string>
+    <string name="bold_text">Hello World! Bold fonts are awesome!</string>
+    <string name="bold_italic_text">Hello World! Bold + italic fonts are awesome!</string>
+    <string name="programmatical_font_text">Hello World! I just set this font programmatically</string>
+    <string name="layout_font_text">Hello World! I just set this font in the layout</string>
 </resources>

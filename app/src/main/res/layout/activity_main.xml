@@ -1,15 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.segunfamisa.sample.xmlfonts.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/gutter_width">
 
-</LinearLayout>
+        <!-- normal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gutter_width"
+            android:text="@string/normal_text"
+            android:textAppearance="@style/TextAppearance"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <!-- italic -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gutter_width"
+            android:text="@string/italic_text"
+            android:textAppearance="@style/TextAppearance"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <!-- bold -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gutter_width"
+            android:text="@string/bold_text"
+            android:textAppearance="@style/TextAppearance"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- bold + italic -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gutter_width"
+            android:text="@string/bold_italic_text"
+            android:textAppearance="@style/TextAppearance"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+        <!-- Programmatically set font view -->
+        <TextView
+            android:id="@+id/text_programmatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gutter_width"
+            android:text="@string/programmatical_font_text"
+            android:textSize="17sp" />
+
+        <!-- layout defined font -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gutter_width"
+            android:text="@string/layout_font_text"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/app_font" />
+
+    </LinearLayout>
+</ScrollView>

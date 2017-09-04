@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextAppearance">
+        <item name="fontFamily">@font/app_font</item>
+    </style>
+
 </resources>
